@@ -13,7 +13,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -37,11 +36,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                  &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                   &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp RALT  &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp RGUI      &kp RGUI                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &mo 4         &mo 4     &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp LC(B)  &kp LCTRL  &kp LALT      &kp RALT  &kp RCTRL  &kp RC(B)  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &kp RGUI      &kp RGUI                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &mo 4         &mo 4     &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -80,7 +79,7 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                          &trans  &trans     &trans                &none                  &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                    &trans  &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &trans  &none   &trans  &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &none
-&none  &none         &none         &none         &trans        &none                             &none      &none                   &trans     &kt MINUS             &kt EQUAL              &none  &none  &none
+&none  &none         &none         &none         &trans        &none                             &none      &none                   &trans     &kp MINUS             &kp EQUAL              &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none   &trans  &trans             &bl BL_INC            &bl BL_DEC             &none  &none  &none
             >;
         };
