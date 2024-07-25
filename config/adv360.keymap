@@ -77,11 +77,11 @@
 
         layer_trevor_keys {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                          &trans     &trans                &trans                 &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                    &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &trans  &none   &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none       &none  &none  &none
-&none  &none         &none         &none         &trans        &none                             &none      &none                      &kp MINUS             &kt EQUAL              &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none   &trans  &trans                           &bl BL_INC             &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                          &trans  &trans     &trans                &none                  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                    &trans  &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &trans  &none   &trans  &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &none
+&none  &none         &none         &none         &trans        &none                             &none      &none                   &trans     &kt MINUS             &kt EQUAL              &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none   &trans  &trans             &bl BL_INC            &bl BL_DEC             &none  &none  &none
             >;
         };
     };
