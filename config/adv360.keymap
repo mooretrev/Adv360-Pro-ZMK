@@ -13,6 +13,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -66,11 +67,11 @@
 
         layer_trevor_keys {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans     &trans                &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &bootloader                                      &trans  &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans      &trans  &trans  &trans  &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans      &trans                  &trans     &kp MINUS             &kp EQUAL              &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans      &trans  &trans  &trans             &bl BL_INC            &bl BL_DEC             &trans  &trans  &trans
+&trans  &trans           &trans        &trans                &trans                 &trans        &trans                                      &trans  &trans         &trans            &trans             &trans          &trans        &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5  &trans                                      &trans  &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9    &kp NUMBER_0  &trans
+&trans  &kp DOLLAR       &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN   &trans  &trans  &trans      &trans  &trans  &trans  &kp PIPE       &kp MINUS         &kp EQUAL          &kp UNDERSCORE  &kt ASTERISK  &trans
+&trans  &kp EXCLAMATION  &kp HASH      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE                     &trans      &trans                  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT     &kp CARET     &trans
+&trans  &trans           &trans        &trans                &trans                               &trans  &trans  &trans      &trans  &trans  &trans                 &trans            &trans             &trans          &trans        &trans
             >;
         };
 
